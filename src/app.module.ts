@@ -7,9 +7,7 @@ import * as Joi from '@hapi/joi';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      validationSchema: Joi.object({
-        PORT: Joi.number().required(),
-      }),
+      validationSchema: Joi.object({}),
     }),
   ],
   controllers: [AppController],
